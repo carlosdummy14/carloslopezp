@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(99.46deg, #075985 0%, #7c8f61 80.21%, #f9c83a 100%);
+  color: white;
+}
+
+.hero {
+  height: 100%;
+  background-color: #a00a;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.greeting {
+  font-size: 72px;
+}
+
+.firstname,
+.lastname {
+  font-size: 144px;
+}
+
+.firstname {
+  font-weight: 700;
+}
+
+.lastname {
+  font-weight: 400;
+}
+
+.text {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sectioncontainer {
+  background-color: #0a0a;
+  max-width: 1200px;
+  margin: 0 auto;
+}
