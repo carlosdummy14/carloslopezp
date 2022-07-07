@@ -1,24 +1,36 @@
 import styles from './App.module.css'
+import carlosImage from '../images/carloslopezp.png'
+import linkedinImage from '../images/linkedin.svg'
+import githubImage from '../images/github.svg'
+import twitterImage from '../images/twitter.svg'
 
 function App() {
   return (
     <div className={styles.container}>
       <header className={styles.hero}>
         <div className={styles.image}>
-          <img src='' alt='' />
+          <img src={carlosImage} alt='carlos lopez' />
         </div>
-        <div className={styles.greeting}>
-          <span>Hi, I'm</span>
-        </div>
-        <h1 className={styles.title}>
-          <span className={styles.firstname}>Carlos</span>
-          <span className={styles.lastname}>López</span>
-        </h1>
-        <h3 className={styles.text}>Software Engineer {'   '} 🇲🇽</h3>
-        <div className={styles.rrss}>
-          <span>linkedin</span>
-          <span>github</span>
-          <span>twitter</span>
+        <div className={styles.info}>
+          <div className={styles.greeting}>
+            <span>Hi, I'm</span>
+          </div>
+          <h1 className={styles.title}>
+            <span className={styles.firstname}>Carlos</span>
+            <span className={styles.lastname}>López</span>
+          </h1>
+          <h3 className={styles.text}>Software Engineer {'   '} 🇲🇽</h3>
+          <div className={styles.rrss}>
+            <a href=''>
+              <img src={linkedinImage} alt='linkedin' />
+            </a>
+            <a href=''>
+              <img src={githubImage} alt='github' />
+            </a>
+            <a href=''>
+              <img src={twitterImage} alt='twitter' />
+            </a>
+          </div>
         </div>
       </header>
 
