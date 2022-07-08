@@ -1,3 +1,10 @@
+:root {
+  --width-circle: 250px;
+  --height-circle: var(--width-circle);
+  --width-rock: 350px;
+  --height-rock: calc(var(--width-rock) - 20px);
+}
+
 .container {
   height: 100vh;
   background: linear-gradient(99.46deg, #075985 0%, #7c8f61 80.21%, #f9c83a 100%);
@@ -76,8 +83,79 @@
   width: 4rem;
 }
 
+.rrss a:hover img {
+  filter: drop-shadow(3px 4px 6px black);
+}
+
 .sectioncontainer {
-  background-color: #0a0a;
+  height: 100vh;
+  background: linear-gradient(80.54deg, #075985 0%, #7c8f61 80.21%, #f9c83a 100%);
+  color: white;
+}
+
+.aboutme {
+  height: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+
+.aboutme h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.aboutme h6 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.aboutme p {
+  font-size: 1.3rem;
+}
+
+.main-text {
+  color: #f8c83c;
+}
+
+.rock-container {
+  position: relative;
+}
+
+.image-circle {
+  width: var(--width-circle);
+  min-width: var(--width-circle);
+  height: var(--height-circle);
+  position: relative;
+  background:
+    radial-gradient(81.35% 81.35% at 75.82% 30.33%, #bbac4e 0%, #0b5b84 100%),
+    linear-gradient(0deg, #fff, #fff);
+  border-radius: 50%;
+}
+
+.image-circle::after {
+  content: "";
+  border-radius: 50%;
+  width: calc(var(--width-circle)/1.17);
+  height: calc(var(--height-circle)/1.17);
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.rock {
+  width: var(--width-rock);
+  height: var(--hight-rock);
+  position: absolute;
+  right: -66px;
+  bottom: 12px;
   margin: 0 auto;
 }
