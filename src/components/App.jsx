@@ -46,45 +46,40 @@ function App() {
                 mainly.
               </span>
               <br />
-              I have worked with PHP, SQL among other languages.
               <br />
-              Love learning something new every day.
+              Love learning something new every day. 📖
               <br />
-              Help small businesses to be part of a digital world.
+              I help small businesses to be part of a digital world. 🌎
               <br />
-              Grateful to God.
+              I have worked with PHP, SQL and other languages.
               <br />
-              Father and I love my family.
-              <br />I like soccer, board games and Magic The Gathering TCG.
+              I have been involved in the different areas of the organizations where I have worked,
+              either developing or implementing software products.
+              <br />
+              I was part of systems development teams for accounting, finance, human resources,
+              payroll, inventories, purchases and manufacturing.
+              <br />
+              The contact with the end user allowed me to identify how a software should be
+              according to their needs.
+              <br />
+              <br />
+              Grateful to God. ✨
+              <br />
+              Father and I love my family. 💙
+              <br />I like soccer ⚽, board games 🧩 and Magic The Gathering TCG. ⚔
             </p>
           </div>
           <div className={styles['rock-container']}>
             <div className={styles['image-circle']}></div>
             <img
               src={rockImage}
-              alt='rock-zen'
+              alt='Applied rocks mean balance'
               width='600px'
               height='580px'
               className={styles.rock}
             />
           </div>
         </article>
-      </section>
-
-      <section className={styles.container}>
-        <div>
-          <h3>More...</h3>
-          <p>
-            I have been involved in the different areas of the organizations where I have worked,
-            either developing or implementing software products.
-            <br />
-            Participate in development of accounting systems, finances, human resources, payroll,
-            product inventories, purchases and manufacturing.
-            <br />
-            The contact with the end user allowed me to identify how a software should be according
-            to their needs.
-          </p>
-        </div>
       </section>
     </div>
   )
