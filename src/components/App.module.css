@@ -6,19 +6,19 @@
 }
 
 .container {
-  height: 100vh;
   background: linear-gradient(99.46deg, #075985 0%, #7c8f61 80.21%, #f9c83a 100%);
   color: white;
+  min-width: 320px;
 }
 
 .hero {
-  height: 100%;
+  height: 100vh;
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0 2rem;
 }
 
 .image {
@@ -42,7 +42,7 @@
 }
 
 .greeting {
-  font-size: 72px;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .text {
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -87,34 +87,32 @@
   filter: drop-shadow(3px 4px 6px black);
 }
 
-.sectioncontainer {
-  height: 100vh;
-  background: linear-gradient(80.54deg, #075985 0%, #7c8f61 80.21%, #f9c83a 100%);
-  color: white;
-}
-
 .aboutme {
-  height: 100%;
+  height: 100vh;
   max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   gap: 1rem;
-  padding: 0 5rem;
 }
 
-.aboutme h3 {
+.abouttext {
+  width: 100%;
+  align-self: center;
+}
+
+.abouttext > h3 {
   font-size: 3rem;
   font-weight: 400;
 }
 
-.aboutme h6 {
+.abouttext > h6 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.aboutme p {
+.abouttext > p {
   font-size: 1.3rem;
 }
 
@@ -124,13 +122,15 @@
 
 .rock-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-circle {
   width: var(--width-circle);
   min-width: var(--width-circle);
   height: var(--height-circle);
-  position: relative;
   background:
     radial-gradient(81.35% 81.35% at 75.82% 30.33%, #bbac4e 0%, #0b5b84 100%),
     linear-gradient(0deg, #fff, #fff);
@@ -155,7 +155,62 @@
   width: var(--width-rock);
   height: var(--hight-rock);
   position: absolute;
-  right: -66px;
-  bottom: 12px;
-  margin: 0 auto;
+  transform: translate(5%, -16%);
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 0 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image {
+    width: 12rem;
+    height: 12rem;
+    min-width: 12rem;
+  }
+
+  .greeting {
+    margin: 0;
+  }
+
+  .firstname,
+  .lastname {
+    font-size: 6.5rem;
+  }
+
+  .rrss {
+    justify-content: space-between;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .aboutme {
+    height: auto;
+    min-width: 320px;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding: 0 0.5rem 2rem;
+  }
+
+  .abouttext {
+    width: 100%;
+    align-self: center;
+  }
+
+  .rock-container {
+    margin-top: 25%;
+  }
+
+  .image-circle {
+    max-width: 320px;
+  }
+
+  .rock {
+    max-width: 97%;
+  }
 }
