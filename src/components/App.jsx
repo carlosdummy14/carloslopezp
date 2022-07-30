@@ -20,13 +20,13 @@ function App() {
           </h1>
           <h3 className={styles.text}>Software Engineer {'   '} 🇲🇽</h3>
           <div className={styles.rrss}>
-            <a href=''>
+            <a href='https://www.linkedin.com/in/carlos-lopez-p/' target='_blank'>
               <img src={linkedinImage} alt='linkedin' />
             </a>
-            <a href=''>
+            <a href='https://github.com/carlosdummy14' target='_blank'>
               <img src={githubImage} alt='github' />
             </a>
-            <a href=''>
+            <a href='https://twitter.com/carlosxxio' target='_blank'>
               <img src={twitterImage} alt='twitter' />
             </a>
           </div>
